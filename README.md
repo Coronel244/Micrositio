@@ -99,3 +99,7 @@ npm run test:watch
 - `package.json`: Configuración del proyecto
 - `tsconfig.json`: Configuración de TypeScript
 - `jest.config.js`: Configuración de Jest
+
+## no me fije en el requisito de (Commits atómicos en una rama prueba/<tu‑nombre>.)
+ - ya que realice el proyecto localmente y lo subi cuando lo finalice 😔.
+
