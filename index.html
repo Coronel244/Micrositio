@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Micrositio de productos destacados de ferretería con filtrado por categorías">
+  <title>Productos Destacados - Ferretería</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="dist/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Productos Destacados</h1>
+    <div class="filter-container">
+      <label for="category-filter" id="category-label">Filtrar por categoría:</label>
+      <select id="category-filter" aria-labelledby="category-label">
+        <option value="todas">Todas las categorías</option>
+        <!-- Las categorías se cargarán dinámicamente -->
+      </select>
+    </div>
+  </header>
+
+  <main>
+    <h2 class="sr-only">Lista de productos</h2>
+    <div id="products-grid" class="products-grid" role="region" aria-label="Lista de productos">
+      <!-- Los productos se cargarán dinámicamente -->
+    </div>
+  </main>
+
+  <dialog id="product-modal" class="product-modal" aria-labelledby="modal-title" aria-describedby="modal-description">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modal-title"></h2>
+        <button id="close-modal" class="close-button" aria-label="Cerrar modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-image-container">
+          <img id="modal-image" alt="">
+        </div>
+        <div class="modal-details">
+          <p id="modal-description"></p>
+          <p class="modal-price">Precio: <span id="modal-price"></span></p>
+          <p class="modal-category">Categoría: <span id="modal-category"></span></p>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <footer>
+    <p>&copy; 2025 Ferretería - Prueba Técnica</p>
+  </footer>
+</body>
+</html>
